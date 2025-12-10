@@ -34,7 +34,7 @@ Treinamento e avaliação do modelo XGBoost
 
 As quatro fases foram implementadas com scripts independentes, permitindo total reprodutibilidade.
 
-🧩 1. Geração dos Dados Sintéticos (CSV)
+## 1. Geração dos Dados Sintéticos (CSV)
 
 📌 Arquivo: gerar_dados_sinteticos.py
 
@@ -84,7 +84,7 @@ Um arquivo CSV será gerado:
 
 dados_certidao_casamento.csv
 
-🖼️ 2. Geração das Imagens Sintéticas
+## 2. Geração das Imagens Sintéticas
 
 📌 Arquivo: gerar_imagens.py
 📌 Usa como base: imagens_base/certidao_casamento.jpg
@@ -107,7 +107,7 @@ certidoes_casamento_novas/
 Execução:
 python gerar_imagens.py 300
 
-🔍 3. Extração de Features (OCR → CSV)
+## 3. Extração de Features (OCR → CSV)
 
 📌 Arquivo: extrair_features.py
 
@@ -158,7 +158,7 @@ python extrair_features.py
 Saída exemplo:
 features2.csv
 
-🤖 4. Treinamento do Modelo — XGBoost
+## 4. Treinamento do Modelo — XGBoost
 
 📌 Arquivo: treinar_modelo.py
 
