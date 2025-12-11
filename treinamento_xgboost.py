@@ -23,16 +23,8 @@ features2['label'] = 1
 features3['label'] = 2
 features4['label'] = 3
 
-#vendo resultado
-features1.head()
-#vendo resultado
-features2.head()
-
 #juntando dataframe em um só
 features_completas = pd.concat([features1, features2, features3, features4])
-
-#vendo features completas
-features_completas.head()
 
 #Quantidade de labels diferentes
 features_completas['label'].value_counts()
@@ -49,8 +41,6 @@ y = features_completas['label']
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
-
-y_train
 
 #4. Criação e treinamento do modelo XGBoost
 model = XGBClassifier(
